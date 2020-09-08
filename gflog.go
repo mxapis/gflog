@@ -14,7 +14,7 @@ func Print(s Severity, m ...interface{}) {
 
 	bb, _ := json.Marshal(log)
 
-	fmt.Printf("`%s`\n", bb)
+	fmt.Printf("%s\n", bb)
 }
 
 func Printf(s Severity, format string, m ...interface{}) {
@@ -25,7 +25,7 @@ func Printf(s Severity, format string, m ...interface{}) {
 
 	bb, _ := json.Marshal(log)
 
-	fmt.Printf("`%s`\n", bb)
+	fmt.Printf("%s\n", bb)
 }
 
 func Fatal(m ...interface{}) {
